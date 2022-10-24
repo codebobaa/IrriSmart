@@ -34,6 +34,8 @@ acres = st.sidebar.text_input("How many acres is your farm?")
 Analysis_types = ['Weather Analysis', 'Irrigation Plan', 'Weather Visualization']
 Analysis = st.sidebar.radio("Select Type of Analysis", Analysis_types)
 
+
+
 #Import Crop Coefficients
 crop_coefficients_df = pd.read_csv("crop_coefs.csv", skiprows=1)
 crop_coefficients_df.set_index("Crop", inplace=True)
@@ -260,8 +262,13 @@ try:
 
 
 except:
-    st.warning("Please enter valid information in the sidebar")
-
+    #st.warning("Please enter valid information in the sidebar")
+    crop_type = "sweet corn"
+    crop_doy = "5"
+    location_name = "Yuma"
+    days_past = "5"
+    acres = "1"
+    Analysis = "Irrigation Plan"
 
 
 
