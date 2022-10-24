@@ -1,7 +1,11 @@
+protobuf==3.19.1
+google-api-core==2.8.2
+google-api-python-client==1.12.11
 streamlit
 pandas
 numpy
-geemap
+geemap==0.13.8
 plotly==5.10.0
-earthengine-api
+earthengine-api==0.1.312
+
 
