@@ -1,0 +1,7 @@
+streamlit
+pandas
+numpy
+geemap
+plotly==5.10.0
+earthengine-api
+
