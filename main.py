@@ -20,20 +20,12 @@ st.set_page_config(layout="wide")
 st.title("Welcome to IrriSmart")
 st.subheader("Please enter the relevant information on the sidebar")
 crop_type = st.sidebar.selectbox("Select Crop Type", ("sweet corn", "wheat", "potato", "pumpkin", "lettuce", "tomato", "berries", "cucumber", "onion"))
-crop_doy = st.sidebar.text_input("Enter Days Since Planting")
-location_name = st.sidebar.text_input("Enter the city of where your farm is located")
+crop_doy = st.sidebar.text_input("Enter Days Since Planting", placeholder= "5")
+location_name = st.sidebar.text_input("Enter the city of where your farm is located", placeholder= "Chandler")
 days_past = st.sidebar.slider("Days since last irrigation", 1, 5, 1)
-acres = st.sidebar.text_input("How many acres is your farm?")
+acres = st.sidebar.text_input("How many acres is your farm?", placeholder = "1")
 Analysis_types = ['Irrigation Plan', 'Weather Visualization', 'Weather Analysis']
 Analysis = st.sidebar.radio("Select Type of Analysis", Analysis_types)
-
-if days_past == '':
-    crop_type = "sweet corn"
-    crop_doy = "5"
-    location_name = "Yuma"
-    days_past = "5"
-    acres = "1"
-    Analysis = "Irrigation Plan"
 
 
 
