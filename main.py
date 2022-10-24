@@ -198,8 +198,8 @@ try:
             irrigation_amount = Total_lost - Total_gained
             volume_necessary = total_gallons(irrigation_amount, float(acres))
             col1, col2, col3 = st.columns(3)
-            col1.metric("Total Water Lost", str(total_gallons(Total_lost, float(acres))) + ' gallons')
-            col2.metric("Total Water Gained", str(total_gallons(Total_gained, float(acres))) + ' gallons')
+            col1.metric("Water Lost Since Last Irrigation", str(total_gallons(Total_lost, float(acres))) + ' gallons')
+            col2.metric("Water Gained Since Last Irrigation", str(total_gallons(Total_gained, float(acres))) + ' gallons')
             col3.metric("Irrigation Amount", str(volume_necessary) + ' gallons')
             #st.success('Amount of Irrigation Necessary: ' + str(volume_necessary) + 'gallons')
         elif Total_lost - Total_gained <= 0:
