@@ -14,6 +14,8 @@ import matplotlib.pyplot as plt
 
 st.set_page_config(layout="wide")
 
+crop_type = "sweet corn"
+
 st.title("Welcome to IrriSmart")
 st.subheader("Please enter the relevant information on the sidebar")
 crop_type = st.sidebar.selectbox("Select Crop Type", ("sweet corn", "wheat", "potato", "pumpkin", "lettuce", "tomato", "berries", "cucumber", "onion"))
