@@ -7,5 +7,3 @@ numpy
 geemap==0.13.8
 plotly==5.10.0
 earthengine-api==0.1.312
-
-
