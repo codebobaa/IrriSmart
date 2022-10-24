@@ -15,6 +15,14 @@ import matplotlib.pyplot as plt
 st.set_page_config(layout="wide")
 
 crop_type = "sweet corn"
+crop_doy = "5"
+location_name = "Yuma"
+days_past = "5"
+acres = "1"
+Analysis = "Irrigation Plan"
+
+
+
 
 st.title("Welcome to IrriSmart")
 st.subheader("Please enter the relevant information on the sidebar")
