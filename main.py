@@ -224,10 +224,11 @@ try:
 
 
     #Home Page
-    st.subheader("Map")
-    Map = geemap.Map(center=[res[4],res[3]], zoom=10)
+
+    #st.subheader("Map")
+    #Map = geemap.Map(center=[res[4],res[3]], zoom=10)
     # Add a basemap
-    Map.add_basemap("SATELLITE")
+    # Map.add_basemap("SATELLITE")
 
 
     # Retrieve Earth Engine dataset
