@@ -237,10 +237,10 @@ try:
 
     #Home Page
 
-    #st.subheader("Map")
-    #Map = geemap.Map(center=[res[4],res[3]], zoom=10)
+    st.subheader("Map")
+    Map = geemap.Map(center=[res[4],res[3]], zoom=10)
     # Add a basemap
-    #Map.add_basemap("SATELLITE")
+    Map.add_basemap("SATELLITE")
 
 
     # Retrieve Earth Engine dataset
@@ -257,7 +257,7 @@ try:
     # Add a colorbar to the map
     #Map.add_colorbar(vis_params["palette"], 0, 4000, caption="Elevation (m)")
     # Render the map using streamlit
-    #Map.to_streamlit()
+    Map.to_streamlit()
 
 
 
