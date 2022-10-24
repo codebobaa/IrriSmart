@@ -245,7 +245,7 @@ try:
     # Add a colorbar to the map
     #Map.add_colorbar(vis_params["palette"], 0, 4000, caption="Elevation (m)")
     # Render the map using streamlit
-    Map.to_streamlit()
+   # Map.to_streamlit()
 
 
 
