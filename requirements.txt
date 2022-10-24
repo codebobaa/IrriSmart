@@ -4,6 +4,7 @@ google-api-python-client==1.12.11
 streamlit
 pandas
 numpy
-geemap==0.13.8
+geemap
+geemap[streamlit]
 plotly==5.10.0
 earthengine-api==0.1.312
